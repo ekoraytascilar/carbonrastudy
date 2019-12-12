@@ -1,0 +1,21 @@
+\documentclass{article}
+\title{CARBONRA study analysis report.}
+\author{Koray Taşcılar}
+\begin{document}
+\maketitle
+\section{Overview}
+COMP measured on baseline and 12 minutes later. each measurement consists of a pre-excercise measurement and timed post-exercise measurements. There are pre-RA and RA patients. This looks at the time course in Pre-RA and RA patients. The basic idea is that cartillage destruction with exercise reflected by a higher COMP response to exercise hence the response will be more when patients have a higher disease activity.
+
+The data also contains IPAQ
+<<setup,message=FALSE,warning=FALSE,error=TRUE>>=
+library(dplyr)
+library(haven)
+@
+
+\section{Read data}
+<<readdata>>=
+carbonradata <- read_sav("carbonradata.sav")
+@
+
+
+\end{document}
